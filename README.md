@@ -69,3 +69,16 @@ Esto configura el correo electrónico que se asociará a tus commits. Git lo usa
 : Muestra el historial de commits
 
 ![Comandos_Git](img/comandos_git.jpg)
+
+## 🧭 Ramas (Branches) ##
+
+Crear una rama: ```git branch nombre_rama```
+
+Cambiar de rama: ```git checkout nombre_rama``` o ```git switch nombre_rama```
+
+Crear y cambiar: ```git checkout -b nueva_rama```
+
+Eliminar una rama: ```git branch -d nombre_rama```
+
+![Commit_apuntando_a_una_Rama](img/commit.png)
+
