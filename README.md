@@ -1,5 +1,22 @@
 # Apuntes_GIT_2025
 
+##🧠 Contenido
+
++ 📌 Introducción a Git
+
++ 📁 Configuración Inicial
+
++ 📂 Comandos Básicos
+
++ 🧭 Ramas (Branches)
+
++ 🔁 Merge y Rebase
+
++ 🌐 GitHub y Repos Remotos
+
++ 🛠️ Buenas Prácticas
+
+
 ## Tema N° 1 
 
 ###¿Que es un control de versiones?###
