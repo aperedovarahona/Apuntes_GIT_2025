@@ -51,3 +51,21 @@ git config --global user.email "tu_correo@example.com"
 ```
 Esto configura el correo electrónico que se asociará a tus commits. Git lo usa como un identificador único, y también es importante si se usa en plataformas como GitHub, que enlazan tu correo con tu cuenta.
 
+## 📂 Comandos Básicos ##
+
+```git init```
+: Inicializa un repositorio
+
+```git add .```
+: Añade archivos al área de staging
+
+```git commit -m "mensaje"```
+: Guarda los cambios en el historial
+
+```git status```
+: Verifica el estado de los archivos
+
+```git log```
+: Muestra el historial de commits
+
+![Comandos_Git](img/comandos_git.jpg)
