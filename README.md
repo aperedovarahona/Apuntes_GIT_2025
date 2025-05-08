@@ -19,7 +19,7 @@
 
 ## 📌 Introducción a Git ##
 
-! [Git_Logo](img/git_logo.png)
+![Git_Logo](img/git_logo.png)
 
 Git es un sistema de control de versiones distribuido, creado por Linus Torvalds en 2005. Permite registrar y controlar cambios en archivos de forma eficiente y colaborativa.
 
