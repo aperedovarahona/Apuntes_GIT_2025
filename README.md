@@ -72,6 +72,8 @@ Esto configura el correo electrónico que se asociará a tus commits. Git lo usa
 
 ## 🧭 Ramas (Branches) ##
 
+![Ramas_en_Git](img/ramas.png)
+
 Crear una rama: ```git branch nombre_rama```
 
 Cambiar de rama: ```git checkout nombre_rama``` o ```git switch nombre_rama```
@@ -109,6 +111,8 @@ No crea un commit de merge.
 Es ideal para mantener un historial limpio y ordenado.
 
 + Precaución: No es recomendable hacer rebase de ramas que ya fueron compartidas con otras peersonas (porque reescribe el historial).
+
+![Merge_de_Ramas](img/merge.png)
 
 ### ⚠️ Conflictos
 Cuando Git no puede fusionar automáticamente los cambios (por ejemplo, si dos ramas modifican la misma línea de un archivo), se produce un conflicto.
