@@ -72,7 +72,17 @@ Esto configura el correo electrónico que se asociará a tus commits. Git lo usa
 
 ## 🧭 Ramas (Branches) ##
 
+### ¿Qué es un rama? ###
+
++ Una rama (branch) en Git es un puntero móvil a uno de los commits del historial. Cuando se crea una rama, el puntero se coloca en el commit actual, posteriormente se puede continuar trabajando y creando nuevos commits. 
+
++ Las ramas son útiles para desarrollar funcionalidades o arreglar bugs sin afectar el código principal (rama "master" o "main"). 
+
++ Al crear una rama, puedes realizar cambios en un entorno aislado y, si los resultados son satisfactorios, fusionar (merge) la rama en la rama principal.
+
 ![Ramas_en_Git](img/ramas.png)
+
+### Comandos basicos para Ramas en Git ###
 
 Crear una rama: ```git branch nombre_rama```
 
