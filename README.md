@@ -1,6 +1,6 @@
-# Apuntes_GIT_2025 
+# Apuntes_GIT_2025
 
-## 🧠 Contenido ##
+## 🧠 Contenido
 
 + 📌 Introducción a Git
 
@@ -16,20 +16,19 @@
 
 + 🛠️ Buenas Prácticas
 
-
-## 📌 Introducción a Git ##
+## 📌 Introducción a Git
 
 ![Git_Logo](img/git_logo.png)
 
 Git es un sistema de control de versiones distribuido, creado por Linus Torvalds en 2005. Permite registrar y controlar cambios en archivos de forma eficiente y colaborativa.
 
-### ¿Que es un control de versiones? ###
- 
+### ¿Que es un control de versiones?
+
 + Es un sistemas que registra cada cambio que se realiza dentro del codigo fuente de un proyecto.
 
 + Permite tener un historial de todos lo cambio producidos, ademas de saber quien y cuando se hizo dicho cambio.
 
-### ¿Por qué es importante un control de versiones ###
+### ¿Por qué es importante un control de versiones
 
 + Rendimiento: solamente guarde lo necesario.
 
@@ -37,21 +36,23 @@ Git es un sistema de control de versiones distribuido, creado por Linus Torvalds
 
 + Flexibilidad: no necesita contar con un desarrollo lineal.
 
-## 📁 Configuración Inicial ##
+## 📁 Configuración Inicial
 
 Esta sección es fundamental porque configura la identidad del usuario en Git, lo cual es necesario para que cada commit que se haga quede correctamente registrado como propiedad de uno.
 
 ```bash
 git config --global user.name "Alejandro (en mi caso)"
 ```
+
 Esto le dice a Git que tu nombre como autor de los commits será Alejandro (en mi caso). Aparecerá en el historial de cambios junto a cada commit que hagas.
 
 ```bash
 git config --global user.email "tu_correo@example.com"
 ```
+
 Esto configura el correo electrónico que se asociará a tus commits. Git lo usa como un identificador único, y también es importante si se usa en plataformas como GitHub, que enlazan tu correo con tu cuenta.
 
-## 📂 Comandos Básicos ##
+## 📂 Comandos Básicos
 
 ```git init```
 : Inicializa un repositorio
@@ -70,19 +71,19 @@ Esto configura el correo electrónico que se asociará a tus commits. Git lo usa
 
 ![Comandos_Git](img/comandos_git.jpg)
 
-## 🧭 Ramas (Branches) ##
+## 🧭 Ramas (Branches)
 
-### ¿Qué es un rama? ###
+### ¿Qué es un rama?
 
-+ Una rama (branch) en Git es un puntero móvil a uno de los commits del historial. Cuando se crea una rama, el puntero se coloca en el commit actual, posteriormente se puede continuar trabajando y creando nuevos commits. 
++ Una rama (branch) en Git es un puntero móvil a uno de los commits del historial. Cuando se crea una rama, el puntero se coloca en el commit actual, posteriormente se puede continuar trabajando y creando nuevos commits.
 
-+ Las ramas son útiles para desarrollar funcionalidades o arreglar bugs sin afectar el código principal (rama "master" o "main"). 
++ Las ramas son útiles para desarrollar funcionalidades o arreglar bugs sin afectar el código principal (rama "master" o "main").
 
 + Al crear una rama, puedes realizar cambios en un entorno aislado y, si los resultados son satisfactorios, fusionar (merge) la rama en la rama principal.
 
 ![Ramas_en_Git](img/ramas.png)
 
-### Comandos basicos para Ramas en Git ###
+### Comandos basicos para Ramas en Git
 
 Crear una rama: ```git branch nombre_rama```
 
@@ -94,9 +95,10 @@ Eliminar una rama: ```git branch -d nombre_rama```
 
 ![Commit_apuntando_a_una_Rama](img/commit.png)
 
-## 🔁 Merge y Rebase ##
+## 🔁 Merge y Rebase
 
-### 🔀 ```git merge nombre_rama``` :
+### 🔀 ```git merge nombre_rama```
+
 Este comando toma los cambios de otra rama (rama) y los fusiona con la rama actual.
 
 ```bash
@@ -108,7 +110,8 @@ Git crea un commit de merge si hay cambios en ambas ramas.
 
 Es ideal para mantener el historial explícito y ramificado.
 
-### 🧱 ```git rebase nombre_rama``` :
+### 🧱 ```git rebase nombre_rama```
+
 Este comando reaplica los commits de la rama actual sobre la base de otra rama. El historial queda más lineal.
 
 ```bash
@@ -125,9 +128,11 @@ Es ideal para mantener un historial limpio y ordenado.
 ![Merge_de_Ramas](img/merge.png)
 
 ### ⚠️ Conflictos
+
 Cuando Git no puede fusionar automáticamente los cambios (por ejemplo, si dos ramas modifican la misma línea de un archivo), se produce un conflicto.
 
 #### ❓ ¿Cómo identificar un conflicto?
+
 Después de un merge o rebase, Git te dirá algo como:
 
 ```bash
@@ -153,13 +158,14 @@ Git marcará las zonas en conflicto así:
 Versión en tu rama actual (por ejemplo, `main`)
 Versión en la rama que estás integrando (por ejemplo, `rama-de-caracteristica`)
 ```
+
 #### 2. Editar el archivo
+
 Debes decidir qué versión conservar, o combinar ambas. Luego borra los marcadores ```<<<<<<<```, ```=======```, ```>>>>>>>```.
 
 Ejemplo resuelto:
 
-```
-Versión combinada o elegida por ti
+```Versión combinada o elegida por ti
 ```
 
 #### 3. Marcar el conflicto como resuelto
@@ -167,14 +173,17 @@ Versión combinada o elegida por ti
 ```bash
 git add archivo.txt
 ```
+
 Esto le indica a Git que ya resolviste el conflicto en ese archivo.
 
 #### 4. Finalizar el proceso
+
 Si estabas haciendo merge:
 
 ```bash
 git commit
 ```
+
 Si estabas haciendo rebase:
 
 ```bash
@@ -182,6 +191,7 @@ git rebase --continue
 ```
 
 ### 💡 Consejos para evitar conflictos
+
 Comunícate con tu equipo antes de hacer cambios grandes.
 
 Sincroniza tu rama frecuentemente con git pull.
