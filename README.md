@@ -303,3 +303,100 @@ git add .
 git commit -m "Tu mensaje"
 git push
 ```
+
+---
+
+## 🛠️ Buenas Prácticas
+
+Trabajar con Git no solo implica conocer los comandos, sino también aplicar buenas prácticas que hacen tu flujo de trabajo más limpio, profesional y colaborativo.
+
+### ✅ Commits pequeños y significativos
+
++ Haz **commits frecuentes**, cada vez que completes una unidad de trabajo lógica.
+
++ Evita los commits gigantes con muchos archivos y cambios mezclados.
+
++ Beneficios:
+  + Es más fácil revisar el historial.
+  + Se pueden revertir errores sin afectar otras partes del proyecto.
+  + Mejora el trabajo en equipo y la revisión de código.
+
+Ejemplo:
+
+```bash
+git commit -m "mensaje de cambios o acciones"
+```
+
+### 📝 Mensajes de commit claros
+
++ Usa mensajes descriptivos, en presente y con intención clara.
+
++ Evita mensajes genéricos como cambios, arreglos, o cosas varias.
+
++ Formato recomendado:
+
+```bash
+<verbo en presente>: <qué hiciste>
+```
+
+**Ejemplo**:
+
++ Refactoriza función de login para mejorar legibilidad.
+
++ Corrige error en validación de email.
+
++ Agrega pruebas unitarias para componente Header.
+
+### 🌿 Uso adecuado de ramas
+
+Crea una rama para cada funcionalidad, corrección o mejora.
+
+Esto permite desarrollar sin afectar la rama principal (main o master).
+
+Ejemplo:
+
+```bash
+git checkout -b feature/agregar-carrito
+```
+
+Tipo de nombres útiles:
+
+```feature/nombre```: para nuevas funcionalidades.
+
+```fix/nombre```: para correcciones de errores.
+
+```hotfix/nombre```: para arreglos urgentes.
+
+```refactor/nombre```: para reestructuraciones internas.
+
+### 🔄 Sincronización frecuente con el remoto
+
++ Antes de empezar a trabajar, se debe hacer un ```git pull``` para asegurarse de tener los últimos cambios.
+
++ Después de hacer tus cambios y confirmar los commits, haz ```git push``` para subirlos.
+
+Se debe evitar trabajar días sin hacer **```push```**, ya que puede generar conflictos o dificultar la integración con el equipo de trabajo.
+
+```bash
+git pull origin main
+git push origin nombre-de-tu-rama
+```
+
+### 📌 Otros consejos útiles
+
++ Usa ```.gitignore``` para evitar subir archivos innecesarios (como binarios, configuraciones locales o carpetas temporales).
+
++ Revisa siempre con git status antes de hacer commit.
+
++ Usa ```git log --oneline``` o herramientas gráficas para entender el historial del proyecto.
+
++ Si se hacen colaboraciones, se debe considerar hacer Pull Requests (PRs) en lugar de subir directo a main.
+
+![Resumen_del_flujo](img/resumen_flujo.png)
+![Extra](img/extra.png)
+
+Con esto concluyo mis apuntes en cuanto al desarrollo del curso de git.
+
+---
+---
+---
