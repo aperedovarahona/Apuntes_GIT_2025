@@ -51,7 +51,7 @@ git config --global user.name "Alejandro (en mi caso)"
 Esto le dice a Git que tu nombre como autor de los commits será Alejandro (en mi caso). Aparecerá en el historial de cambios junto a cada commit que hagas.
 
 ```bash
-git config --global user.email "tu_correo@example.com"
+git config --global user.email "aperedovarahona@gmail.com (en mi caso)"
 ```
 
 Esto configura el correo electrónico que se asociará a tus commits. Git lo usa como un identificador único, y también es importante si se usa en plataformas como GitHub, que enlazan tu correo con tu cuenta.
